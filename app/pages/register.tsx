@@ -23,6 +23,7 @@ const Register = () => {
       await setDoc(doc(db, 'users', user.uid), {
         username,
         email,
+        status: true,
         userType: 'visitor',
         createdAt: new Date(),
         user_uid: user.uid
